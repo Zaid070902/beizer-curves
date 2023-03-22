@@ -15,17 +15,17 @@ function draw() {
   let spot1 = windowWidth - windowWidth * 10;
   for (let i = 0; i < windowWidth; i++) {
     yoff = frameCount * 0.005;
-    xoff = xoff + 0.008;
+    xoff = xoff + 0.005;
 
     let ny = (noise(xoff, yoff) * windowWidth) / 2;
     let nx = noise(xoff, yoff) * windowHeight * 2;
 
     spot1 += 20;
     for (let c = 0; c < 255; c++) {
-      red = -frameCount * 0.001;
+      red = -frameCount * 0.003;
       blue = -frameCount * 0.005;
     }
-    red = frameCount * 0.001;
+    red = frameCount * 0.003;
     blue = frameCount * 0.005;
 
     let rednoise = noise(red) * 255;
